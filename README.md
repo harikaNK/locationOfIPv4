@@ -1,4 +1,4 @@
-# locationOfIPv4
+# Find location of IPv4 Address
 
 The goal of this application is to allow the users to find location of an IPv4 address. This application also validates the IP address both on 
 frontend and backend and displays error messages accordingly. To find the location of an IPv4 address, I used the MaxMind GeoLite2 database 
