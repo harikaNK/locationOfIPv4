@@ -5,7 +5,7 @@ frontend and backend and displays error messages accordingly. To find the locati
 (https://dev.maxmind.com/geoip/geoip2/geolite2/) which is a database of geolocation information.
 
 
-###### Following are some commands that can be used to run this project:
+# Following are some commands that can be used to run this project:
 
 # To run the project:
 docker-compose up
@@ -13,7 +13,7 @@ docker-compose up
 # To rebuild and then run the project:
 docker-compose up --build
 
-###### Testing:
+# Testing:
 
 In order to test the application, 
 1. Run the following command `docker-compose up --build` 
