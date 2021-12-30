@@ -1,0 +1,20 @@
+version: "3.0"
+services:
+  db:
+    build: ./db
+    environment:
+      MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
+      MYSQL_DATABASE: $MYSQL_DATABASE
+    restart: always
+  node:
+    build: ./node
+    environment:
+      DATABASE: $MYSQL_DATABASE
+      USER: $MYSQL_USER
+      PASSWORD: $MYSQL_ROOT_PASSWORD
+      HOST: $MYSQL_HOST
+    ports:
+      - "${MYSQL_PORT}:${MYSQL_PORT}"
+    depends_on:
+      - db
+    restart: on-failure
